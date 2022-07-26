@@ -36,13 +36,12 @@ const quizData = [
     },
 ];
 const quiz= document.getElementById('quiz')
-const answerEls = document.querySelectorAll('.answer')
+const answerEls = document.querySelectorAll('answer')
 const questionEl = document.getElementById('question')
 const a_text = document.getElementById('a_text')
 const b_text = document.getElementById('b_text')
 const c_text = document.getElementById('c_text')
-const submitBtn = document.getElementById('next')
-
+const submitBtn = document.getElementById('submit')
 
 let currentQuiz = 0
 let score = 0
@@ -73,7 +72,9 @@ function getSelected() {
 }
 
 submitBtn.addEventListener('click', () => {
+    
     const answer = getSelected()
+    console.log(ANS)
     if(answer) {
         if(answer === quizData[currentQuiz].correct) {
             score++

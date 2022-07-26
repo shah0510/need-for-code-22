@@ -32,7 +32,6 @@
     height: 300px;
     margin-top: 20px;
     float: right;
-    clip-path:ellipse()
 }
 .image-section img{
     width: 60%;
@@ -53,3 +52,4 @@
     padding: 20px 10px;
 
 }
+

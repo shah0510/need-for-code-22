@@ -26,7 +26,7 @@ h2{
     text-align: center;
     margin: 0;
 }
-ul{
+u1{
     list-style-type: none;
     padding: 0;
 }
@@ -34,7 +34,7 @@ u1 li{
     font-size: 1.2rem;
     margin: 1rem 0;
 }
-ul li label{
+u1 li label{
     cursor: pointer;
 }
 button{
