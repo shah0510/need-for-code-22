@@ -12,7 +12,7 @@
         .container-fluid
         {
             width: 100%;
-            height: 100vh;
+            height: 90vh;
             background: linear-gradient(to Left, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(bg1.jpg);
            background-size: cover;
         }
@@ -147,11 +147,53 @@
             object-fit: cover;
             object-position: center;
         }
+        .blog-text
+        {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-text span
+        {
+            color: black;
+            font-size: larger;
+            text-align: center;
+        }
+        .title
+        {
+            text-align: center;
+            padding: 25px;
+            font-size: 50px;
+        }
+        .map
+        {
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 50px;
+        }
+        h1{
+            color: #333;
+            margin-bottom: 60px;
+        }
+        iframe{
+            width: 80%;
+            height: 500px;
+           
+        }
+        .rectangle
+        {
+           text-align: center;
+           padding: 50px;
+        }
     </style>
     <body>
         <div class="container-fluid">
             <div class="container">
-                <h2>PetFinder</h2>
+                <h2>PawsHunger</h2>
                 <ul>
                     <li>HOME</li>
                     <li>ABOUT</li>
@@ -162,20 +204,57 @@
                 <button class="btn"><ion-icon name="call-outline"></ion-icon>(+91)9876984756</button>
             </div>
             <div class="content">
-                <h1>Pet Care &<br>Pet Finder</h1>
+                <h1>PAWS HUNGER</h1>
                 <p>Hi, Welcome to the dogfinder<br>ONLY 10% OF THE DOGS BORN FIND A PERMANENT HOUSE.<br>EACH YEAR,
                     APPROXIMATELY 2.7 MILLION DOGS AND CATS ARE KILLED<br>EVERY YEAR
                     BECAUSE THEY AREN'T ABLE TO FIND A FOREVER HOME.</p>
                 <button class="btn">Learn More</button>
             </div>
         </div>
+        
+        <p class="title">MEET THEM</p>
+        
         <div class="blog-container">
             <div class="blog-box">
                 <div class="blog-img">
-                    <img src="bg2.jpg" alt="Blog" class="src">
+                    <img src="b4.jpg" alt="Blog" class="src">
+                </div>
+                <div class="blog-text">
+                    <span>LIA</span>
                 </div>
             </div>
+
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="bg3.jpg" alt="Blog" class="src">
+                </div>
+                <div class="blog-text">
+                    <span>TEDDY</span>
+                </div>
+            </div>
+
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="b5.jpg" alt="Blog" class="src">
+                </div>
+                <div class="blog-text">
+                    <span>PET PRODUCTS</span>
+                </div>
+            </div>
+
+            <div class="map">
+                <h1>STORE LOCATOR</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609964812!2d72.7410986711394!3d19.082197838610792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1658830744527!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
         </div>
+        <div class="rectangle">
+            <h1>SAVE ANIMALS</h1>
+            <hr>
+            <p><span style="font-size: 30px">Animals are all around us, even if they're more difficult to perceive in an increasingly urbanized world. In many cases, animals exist to serve us, brought into life on factory farms, in laboratories, or in industrial breeding facilities where they're routinely poked, prodded, and exploited. Animal protection is borne out of that exploitation.<br>If we can teach people about wildlife, they will be touched. Share my wildlife with me. Because humans want to save things that they love</span></p>
+            <hr>
+         </div>
+        
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
