@@ -32,6 +32,7 @@
     height: 300px;
     margin-top: 20px;
     float: right;
+    clip-path:ellipse()
 }
 .image-section img{
     width: 60%;
@@ -49,7 +50,6 @@
 .icons i{
     color: black;
     font-size: 50px;
-    padding: 50px 40px;
+    padding: 20px 10px;
 
 }
-
