@@ -13,17 +13,19 @@
         {
             width: 100%;
             height: 100vh;
-            background: linear-gradient(to Left, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(bg.jpg);
+            background: linear-gradient(to Left, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(bg1.jpg);
+           background-size: cover;
         }
         .container
         {
-            width: 1200px;
+            width: auto;
             height: 80px;
             margin: auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0px 25px;
+            background-color: #604020;
         }
         .container h2
         {
@@ -96,6 +98,7 @@
             font-size: #000;
             line-height: 30px;
             padding-top: 30px;
+            color: #fff;
         }
         .content .btn
         {
@@ -117,6 +120,33 @@
             background-color:  #fff;
             color: hsl(143, 65%, 49%);
         }
+        .blog-container
+        {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px 0px;
+                flex-wrap: wrap;
+        }
+        .blog-box
+        {
+            width: 350px;
+            background-color: #ffffff;
+            border: 1px solid #ececec;
+            margin: 20px;
+        }
+        .blog-img
+        {
+            width: 100%;
+            height: auto;
+        }
+        .blog-img img
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
     </style>
     <body>
         <div class="container-fluid">
@@ -125,16 +155,25 @@
                 <ul>
                     <li>HOME</li>
                     <li>ABOUT</li>
+                    <li>SHOP</li>
                     <li>TRACKER</li>
-                    <li>BLOG</li>
-                    <li>CONTACT</li>
+                    <li>QUIZ</li>
                 </ul>
                 <button class="btn"><ion-icon name="call-outline"></ion-icon>(+91)9876984756</button>
             </div>
             <div class="content">
                 <h1>Pet Care &<br>Pet Finder</h1>
-                <p>hi, welcome to the dogfinder<br>This helps you in many ways</p>
+                <p>Hi, Welcome to the dogfinder<br>ONLY 10% OF THE DOGS BORN FIND A PERMANENT HOUSE.<br>EACH YEAR,
+                    APPROXIMATELY 2.7 MILLION DOGS AND CATS ARE KILLED<br>EVERY YEAR
+                    BECAUSE THEY AREN'T ABLE TO FIND A FOREVER HOME.</p>
                 <button class="btn">Learn More</button>
+            </div>
+        </div>
+        <div class="blog-container">
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="bg2.jpg" alt="Blog" class="src">
+                </div>
             </div>
         </div>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
