@@ -139,6 +139,7 @@
                 align-items: center;
                 margin: 20px 0px;
                 flex-wrap: wrap;
+                
         }
         .blog-box
         {
@@ -245,6 +246,50 @@
             padding: 0;
             box-sizing: border-box;
         }
+        .sub-menu-2
+        {
+            display: none;
+        }
+        .container ul li:hover .sub-menu-2
+        {
+            display: block;
+            position: absolute;
+            background: rgb(0,100,0);
+            margin-top: 15px;
+            margin-left: -15px;   
+        }
+        .container ul li:hover .sub-menu-2 ul
+        {
+            display: block;
+            margin: 10px;
+        }
+        .container ul li:hover .sub-menu-2 ul li
+        {
+            width: 150px;
+            padding: 10px;
+            border-bottom: 1px dotted #fff;
+            background: transparent;
+            border-radius: 0;
+            text-align: left;
+        }
+        .container ul li:hover .sub-menu-2 ul li:last-child
+        {
+            border-bottom: none;  
+        }
+        .container ul li:hover .sub-menu-2 ul li a:hover
+        {
+            color: #b2ff00;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body{
+            line-height: 1.5;
+            font-family: 'Poppins', sans-serif;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         .foot
         {
             max-width: 1170px;
@@ -328,6 +373,16 @@
             color: #24262b;
             background-color: #ffffff;
         }
+        .btn{
+            padding: 8px 25px;
+            border: 1px solid var(--main);
+            color: var(--main) !important;
+            font-weight: bold;
+            border-radius: 15px;    
+            background-color: #99c590;
+            padding-top: 20px;        
+        }
+        
 
     </style>
 
@@ -340,15 +395,23 @@
                     <li><a href="#">ADOPTION</a>
                     <div class="sub-menu-1" id="submenu">
                         <ul>
-                            <li><a href="index.html">Cat Adoption</a></li>
-                            <li>Dog Adoption</li>
+                            <li><a href="catAdoption.html">Cat Adoption</a></li>
+                            <li><a href="dog.html">Dog Adoption</a></li>
                             <li>Other pets</li>
                         </ul>
                     </div>
                     </li>
-                    <li>SHOP</li>
+                    <li><a href="#">SHOP</a>
+                        <div class="sub-menu-2" id="submenu">
+                            <ul>
+                                <li><a href="food.html">Pet Food</a></li>
+                                <li><a href="#">Pet Clothes</a></li>
+                                <li>Other things</li>
+                            </ul>
+                        </div>
                     <li><a href="tracker.html">TRACKER</a></li>
-                    <li>QUIZ</li>
+                    <li><a href="chatbox.html">CHAT</a></li>
+                    <li><a href="quiz1.html">QUIZ</a></li>
                 </ul>
                 <button class="btn"><ion-icon name="call-outline"></ion-icon>(+91)9876984756</button>
             </div>
@@ -361,7 +424,7 @@
             </div>
         </div>
         
-        <p class="title">MEET THEM</p>
+        <p class="title"><u>MEET THEM</u></p>
         
         <div class="blog-container">
             <div class="blog-box">
@@ -370,6 +433,7 @@
                 </div>
                 <div class="blog-text">
                     <span>CATS</span>
+                    <button class="btn"><a href="catAdoption.html">ADOPT NOW</a></button>
                 </div>
             </div>
 
@@ -379,6 +443,7 @@
                 </div>
                 <div class="blog-text">
                     <span>DOGS</span>
+                    <button class="btn"><a href="dog.html">ADOPT NOW</a></button>
                 </div>
             </div>
 
@@ -388,17 +453,18 @@
                 </div>
                 <div class="blog-text">
                     <span>OTHER PETS</span>
+                    <button class="btn"><a href="other.html">ADOPT NOW</a></button>
                 </div>
             </div>
 
             <div class="map">
-                <h1>STORE LOCATOR</h1>
+                <h1><u>STORE LOCATOR</u></h1>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609964812!2d72.7410986711394!3d19.082197838610792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1658830744527!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             
         </div>
         <div class="rectangle">
-            <h1>SAVE ANIMALS</h1>
+            <h1><u>SAVE ANIMALS</u></h1>
             <hr>
             <p><span style="font-size: 30px">Animals are all around us, even if they're more difficult to perceive in an increasingly urbanized world. In many cases, animals exist to serve us, brought into life on factory farms, in laboratories, or in industrial breeding facilities where they're routinely poked, prodded, and exploited. Animal protection is borne out of that exploitation.<br>If we can teach people about wildlife, they will be touched. Share my wildlife with me. Because humans want to save things that they love</span></p>
             <hr>
